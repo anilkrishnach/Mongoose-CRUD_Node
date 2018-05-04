@@ -1,0 +1,33 @@
+<html>
+<head>
+</head>
+<body>
+If you want to save new item, enter its details.
+<form action="/save" method="post">
+  <pre>
+Name:        <input type="text" id="name" name="name" size="20" required><br/>
+Description: <input type="textarea" id="desc" name="desc" size="20" required><br/>
+Price:       <input type="text" name="price"  id="price" size="20" pattern="[0-9]+" required><br/>
+Quantity:    <input type="text" name="quan" size="20" pattern="[0-9]+" required><br/>
+</pre>
+            <button class="btn" type="submit">submit</button>
+</form>
+If you want to update details(except name), fill the necessary fields with new values and leave unnecessary fields empty.
+<form action="/update" method="post">
+  <pre>
+Name:        <input type="text" id="name" name="name" size="20" required><br/>
+Description: <input type="textarea" id="desc" name="desc" size="20" ><br/>
+Price:       <input type="text" name="price"  id="price" size="20" pattern="[0-9]+" ><br/>
+Quantity:    <input type="text" name="quan" size="20" pattern="[0-9]+" ><br/>
+</pre>
+            <button class="btn" type="submit">submit</button>
+</form>
+To delete, specify the name.
+<form action="/delete" method="post">
+  <pre>
+Name:        <input type="text" id="name" name="name" size="20" required><br/>
+</pre>
+            <button class="btn" type="submit">submit</button>
+</form>
+</body>
+</html>
